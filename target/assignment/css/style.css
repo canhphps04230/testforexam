@@ -1,0 +1,472 @@
+/* change to multiple carousel item */
+.multi-item-carousel .carousel-inner>.item {
+	-webkit-transition: 500ms ease-in-out left;
+	transition: 500ms ease-in-out left;
+}
+
+.multi-item-carousel-main .carousel-inner>.item {
+	-webkit-transition: 500ms ease-in-out left;
+	transition: 500ms ease-in-out left;
+}
+
+.multi-item-carousel .carousel-inner .active.left {
+	left: -25%;
+}
+
+.multi-item-carousel .carousel-inner .active.right {
+	left: 25%;
+}
+
+.multi-item-carousel .carousel-inner .next {
+	left: 25%;
+}
+
+.multi-item-carousel .carousel-inner .prev {
+	left: -25%;
+}
+
+@media all and (transform-3d) , ( -webkit-transform-3d ) {
+	.multi-item-carousel .carousel-inner>.item {
+		-webkit-transition: 500ms ease-in-out all;
+		transition: 500ms ease-in-out all;
+		-webkit-backface-visibility: visible;
+		backface-visibility: visible;
+		-webkit-transform: none !important;
+		transform: none !important;
+	}
+	.multi-item-carousel-main .carousel-inner>.item {
+		-webkit-transition: 500ms ease-in-out all;
+		transition: 500ms ease-in-out all;
+		-webkit-backface-visibility: visible;
+		backface-visibility: visible;
+		-webkit-transform: none !important;
+		transform: none !important;
+	}
+}
+
+.multi-item-carousel .carousel-control.left, .multi-item-carousel .carousel-control.right
+	{
+	background-image: none !important;
+	/* 	filter: progid: none !important; */
+	/* 	filter: none !important; */
+	/* 	outline: 0; */
+	/* 	opacity: 1; */
+	max-width: 30px;
+}
+
+.multi-item-carousel-main .carousel-control.left,
+	.multi-item-carousel-main .carousel-control.right {
+	background-image: none !important;
+	/* 	filter: progid: none !important; */
+	/* 	filter: none !important; */
+	/* 	outline: 0; */
+	/* 	opacity: 1; */
+	max-width: 30px;
+}
+
+.multi-item-carousel .product-frame:hover {
+	opacity: 0.6;
+}
+
+.multi-item-carousel .carousel-control.right {
+	
+}
+
+/* .carousel-control:hover, .carousel-control:focus { */
+/* 	color: #fff; */
+/* 	text-decoration: none; */
+/* 	outline: 0; */
+/* } */
+body {
+	display: block;
+	margin: 0 auto;
+	padding-top: 110px;
+}
+
+.h1 {
+	color: #e7e7e7;
+	font-size: 2.25em;
+	text-align: center;
+	margin-top: 1em;
+	margin-bottom: 2em;
+	text-shadow: 0px 2px 0px #000000;
+}
+
+/* none background for carousel */
+.carousel .carousel-control.left, .carousel .carousel-control.right {
+	background-image: none !important;
+	filter: progid: none !important;
+}
+/* 	filter: none !important; */
+/* 	outline: 0; */
+/* 	opacity: 1; */
+/* } */
+
+/* decrease width of panel */
+.
+.panel {
+	border-radius: 0 !important;
+}
+
+.panel .panel-heading {
+	height: 35px;
+}
+
+.panel .panel-body .container {
+	
+}
+
+/* expand dropdown menu */
+.dropdown-menu-expanded {
+	width: 480px;
+ 	height: 400px;
+	max-height: 700px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	margin-bottom:0px!important;
+}
+
+/* make dropdown menu no margin and padding */
+.dropdown-menu-margin {
+	height: 480px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+#cartcontent .table {
+	margin-bottom: 0px!important;
+	padding-bottom: 0px!important;
+}
+
+/* change navbar-nav justified */
+
+/* CSS used here will be applied after bootstrap.css */
+.navbar .navbar-nav-justified {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.navbar .navbar-collapse>.nav-justified.nav-pills>li>a {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin-bottom: 0;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+}
+
+.navbar .navbar-collapse>.nav-justified.nav-pills>li+li {
+	margin-left: 0;
+	border-top: solid 1px #e7e7e7;
+}
+
+.navbar-toggle-center {
+	width: 100%;
+	float: none;
+	margin: 0 auto;
+	border-width: 0;
+	border-radius: 0;
+	padding: 14px 15px;
+	font-size: 16px;
+}
+
+@media ( min-width : 768px) {
+	.navbar .navbar-collapse>.nav-justified.nav-pills>li:first-child>a {
+		-webkit-border-radius: 4px 0px 0px 4px;
+		-moz-border-radius: 4px 0px 0px 4px;
+		border-radius: 4px 0px 0px 4px;
+	}
+	.navbar .navbar-collapse>.nav-justified.nav-pills>li:last-child>a {
+		-webkit-border-radius: 0px 4px 4px 0px;
+		-moz-border-radius: 0px 4px 4px 0px;
+		border-radius: 0px 4px 4px 0px;
+	}
+	.navbar .navbar-collapse>.nav-justified.nav-pills>li+li {
+		margin-left: 0;
+		border-left: solid 1px #e7e7e7;
+		border-top: 0;
+	}
+}
+
+/* end navbar-nav justified */
+
+/* make carousel inner image center */
+.carousel-inner>.item>img {
+	margin: auto;
+}
+
+/* create container class top padding */
+.container {
+	
+}
+
+/* row top padding */
+.row {
+	
+}
+
+/* style for product price */
+.product-price {
+	
+}
+
+.product-price::after {
+	color: red;
+	font-weight: bold;
+	content: " VND";
+}
+
+/* set padding 0 */
+.nopadding {
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-left: 0;
+	padding-right: 0;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+.no-leftright-padding {
+	padding-left: 0;
+	padding-right: 0;
+	padding-top: 10px;
+}
+
+/* style for autohidenavbar */
+.nav-up {
+	top: -40px;
+}
+
+/* padding for maincarousel */
+#mainCarousel {
+	padding-bottom: 20px;
+}
+
+/* make carousel multi-item-carousel wider */
+.panel-body .container {
+	
+}
+
+/* make panel fixed height */
+.fixed-height {
+	min-height: 240px;
+	max-height: 240px;
+}
+
+/* set font for menu  navbar */
+#navlist li {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+/* css for product-frame */
+.product-frame .img-responsive, td .img-responsive {
+	margin: 0 auto;
+}
+
+.product-frame {
+	padding-top: 25px;
+	padding-bottom: 35px;
+	min-height: 270px;
+}
+
+
+/* css for product-info */
+.product-info {
+	position: relative;
+}
+
+.product-info .product-price {
+	position: absolute;
+	top: 40px;
+	left: 25%;
+	font-weight: bold;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+/* make checkbox bigger */
+input[type=checkbox].large-checkbox {
+	width: 25px;
+	height: 25px;
+}
+
+/* change boostrap theme */
+body {
+	background-color: #f1f1f1 !important;
+}
+
+/* change width of search */
+#txtSearch {
+	width: 480px;
+}
+
+/* change height of navbar */
+#navlist a {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+/* change arrow carousel */
+.new-arrow {
+	position: absolute;
+	top: 50%;
+	width: auto;
+	height: 1em;
+	background: transparent;
+	top: 50%;
+}
+
+/* background for slider header */
+h2 {
+	color: white;
+	background: #00b7f1;
+	padding: 5px 10px 5px 15px;
+	height: 100%;
+	position: relative;
+	margin: 0;
+	float: left;
+	-webkit-border-radius: 3px 0 0 3px;
+	-moz-border-radius: 3px 0 0 3px;
+	border-radius: 3px 0 0 3px;
+	font-size: 20px;
+}
+
+h2::after {
+	content: " ";
+	display: block;
+	width: 0;
+	height: 0;
+	margin-left: 2px;
+	vertical-align: middle;
+	border-top: 16px solid transparent;
+	border-left: 13px solid #00b7f1;
+	border-right: 0 solid transparent;
+	border-bottom: 16px solid transparent;
+	position: absolute;
+	top: 0;
+	right: -13px;
+}
+
+/* small padding */
+.small-padding {
+	padding: 10px;
+	margin: 0;
+}
+
+.medium-padding {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin: 0;
+}
+
+/* up and down padding */
+.updown-padding {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin: 0;
+}
+
+.no-updown-padding {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin: 0;
+}
+
+/* remove pane border */
+.no-border {
+	border: 0;
+	box-shadow: none !important;
+}
+
+/* no bacground color */
+.no-background {
+	background: transparent;
+}
+
+.medium-height {
+	min-height: 60px;
+}
+
+/* clear bootstrap column */
+.col-md-3:nth-child(4n+1){
+    clear: left;
+}
+
+/* margin for select */
+.select-tag {
+	margin-left: 120px;
+	padding-left: 120px;
+}
+
+/* set modal auto scroll */
+.modal-body{
+    max-height: calc(100vh - 240px);
+    overflow-y: auto;
+}
+
+/* make datepicker go front */
+.datepicker{
+	z-index: 9999!important;
+}
+
+/* make alert fixed on top */
+.alert-fixed {
+    position:fixed; 
+    top: 100px; 
+    right: 0px; 
+    width: 500px;
+    z-index:9999;
+    border-radius:0px
+}
+
+#quantityNum {
+	max-width: 65px;
+}
+
+/* margin between rows */
+.top10 {
+	margin-top: 10px;
+}
+
+.top15 {
+	margin-top: 15px;
+}
+
+/* set panel for product detail */
+/* .detail-right-panel{ */
+/* 	border: olive 4px solid; */
+/* 	padding-left: 30px; */
+/* 	margin: 0px; */
+/* } */
+
+/* .detail-left-panel{ */
+/* 	border: olive 4px solid; */
+/* 	margin: 0px; */
+/* } */
+
+/* make table td vertical align */
+.vertical-align{
+	vertical-align: middle!important;
+}
+
+/* make image responsive vertical center */
+.vertical-center {
+	display:flex;
+	align-items:center;
+}
+
+.green-test{
+	background: green;
+	margin-top: 0px;
+	padding-top: 0px;
+	height: 490px;
+}

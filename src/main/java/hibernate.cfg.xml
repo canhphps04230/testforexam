@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+ <session-factory>
+  <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+  <property name="hibernate.connection.url">jdbc:mysql://us-cdbr-iron-east-03.cleardb.net:3306/ad_b71a9c91b7560a5</property>
+  <property name="hibernate.connection.username">be8d7a7c0a1014</property>
+  <property name="hibernate.connection.password">fae09c5d</property>
+  <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+  <property name="hibernate.current_session_context_class">thread</property>
+  <property name="hibernate.show_sql">true</property>
+  <mapping resource="model/User.hbm.xml"/>
+  <mapping resource="model/ProductType.hbm.xml"/>
+  <mapping resource="model/Product.hbm.xml"/>
+  <mapping resource="model/AdvertiseType.hbm.xml"/>
+  <mapping resource="model/Advertise.hbm.xml"/>
+  <mapping resource="model/Cart.hbm.xml"/>
+  <mapping resource="model/CartItem.hbm.xml"/>
+ </session-factory>
+</hibernate-configuration>

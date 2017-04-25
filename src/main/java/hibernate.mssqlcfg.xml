@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+ <session-factory>
+  <property name="hibernate.connection.driver_class">net.sourceforge.jtds.jdbc.Driver</property>
+  <property name="hibernate.connection.url">jdbc:jtds:sqlserver://mssql42976-env-9841338.jelastic.skali.net:1433/ShopOnline</property>
+  <property name="hibernate.connection.username">sa</property>
+  <property name="hibernate.connection.password">EZTbvy20742</property>
+  <property name="hibernate.dialect">org.hibernate.dialect.SQLServerDialect</property>
+  <property name="hibernate.current_session_context_class">thread</property>
+  <property name="hibernate.show_sql">true</property>
+  <mapping resource="model/User.hbm.xml"/>
+  <mapping resource="model/ProductType.hbm.xml"/>
+  <mapping resource="model/Product.hbm.xml"/>
+  <mapping resource="model/AdvertiseType.hbm.xml"/>
+  <mapping resource="model/Advertise.hbm.xml"/>
+  <mapping resource="model/Cart.hbm.xml"/>
+  <mapping resource="model/CartItem.hbm.xml"/>
+ </session-factory>
+</hibernate-configuration>
